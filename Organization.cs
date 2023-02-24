@@ -4,9 +4,9 @@ namespace Лабораторная_работа_1_вар_8
 {
     public abstract class Organization
     {
-        protected int inn;
+        protected long inn;
         private string name;
-        public Organization(int inn, string name)
+        public Organization(long inn, string name)
     {
         this.inn = inn;
         this.name = name;

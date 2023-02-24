@@ -10,7 +10,7 @@ namespace Лабораторная_работа_1_вар_8
         private int incomes;
         private int expenses;
 
-        public InsuranceСompany(int inn, string name, int number_of_clients, int incomes, int expenses) : base(inn, name)
+        public InsuranceСompany(long inn, string name, int number_of_clients, int incomes, int expenses) : base(inn, name)
         {
             this.number_of_clients = number_of_clients;
             this.incomes = incomes;
