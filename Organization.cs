@@ -2,7 +2,7 @@
 
 namespace Лабораторная_работа_1_вар_8
 {
-    internal abstract class Organization
+    public abstract class Organization
     {
         protected int inn;
         private string name;
@@ -37,6 +37,11 @@ namespace Лабораторная_работа_1_вар_8
             }
             // Сравниваем объекты только по серийному номеру, т.к. он уникален для каждого объекта.
             return this.inn == ((Organization)obj).inn;
+        }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
         }
     }
 

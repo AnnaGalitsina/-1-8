@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 
 namespace Лабораторная_работа_1_вар_8
 {
-    public class InsuranceСompany:Organization
+    public class InsuranceСompany : Organization
     {
         private int number_of_clients;
         private int incomes;
@@ -41,6 +41,11 @@ namespace Лабораторная_работа_1_вар_8
                 return false;
             }
             return this.inn == ((InsuranceСompany)obj).inn;
+        }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
         }
     }
 }
